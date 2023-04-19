@@ -30,21 +30,6 @@ public class UserSteps {
         user.validateHttpResponseCode200();
     }
 
-    @Given("user has endpoint post new user")
-    public void userHasEndpointPostNewUser() {
-        user.setPostEndpoint();
-    }
-
-    @When("user send post new user")
-    public void userSendPostNewUser() {
-        user.sendPostHttpRequest();
-    }
-
-    @Then("user see status code {int}")
-    public void userSeeStatusCode(int arg0) {
-        user.validateHttpResponseCode201();
-    }
-
     @And("user validate response body")
     public void userValidateResponseBody() {
         user.validateResponseBody();
