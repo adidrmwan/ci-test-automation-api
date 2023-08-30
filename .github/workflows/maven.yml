@@ -25,4 +25,4 @@ jobs:
          ./.github/workflows/var.sh
       shell: bash
     - name: print variable
-      run: echo ${LINK_TO_APK_FILE_IN_GCP}
+      run: print ${LINK_TO_APK_FILE_IN_GCP}
