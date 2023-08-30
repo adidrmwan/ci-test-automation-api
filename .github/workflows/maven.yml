@@ -19,3 +19,10 @@ jobs:
         cache: maven
     - name: Run Automation Using Java
       run: mvn clean verify
+    - name: Run script file
+      run: |
+         chmod +x ./public/scripts/test.sh
+         ./public/scripts/test.sh
+      shell: bash
+    - name: print variable
+      run: echo ${LINK_TO_APK_FILE_IN_GCP}
