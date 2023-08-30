@@ -21,8 +21,8 @@ jobs:
       run: mvn clean verify
     - name: Run script file
       run: |
-         chmod +x ./var.sh
-         ./var.sh
+         chmod +x ./.github/workflows/var.sh
+         ./.github/workflows/var.sh
       shell: bash
     - name: print variable
       run: echo ${LINK_TO_APK_FILE_IN_GCP}
